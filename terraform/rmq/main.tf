@@ -10,7 +10,7 @@ resource "aws_instance" "rmq" {
 	vpc_security_group_ids = ["sg-0f59a0c84dd80befa"]
 
 	tags = {
-		Name = var.name
+		name = var.name
 		group = var.group
 	}
 }
